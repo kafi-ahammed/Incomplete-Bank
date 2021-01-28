@@ -65,7 +65,7 @@
         // deposit button event handler
             const depositBtn=document.getElementById('addDeposit');
             depositBtn.addEventListener('click',function(){
-            const depositAmount =document.getElementById('depositAmount').Value;
+            const depositAmount =document.getElementById('depositAmount').value;
             const depositNumber=parseFloat(depositAmount);
             
             const currentDeposit=document.getElementById('currentDeposit').innerText;
@@ -73,7 +73,7 @@
             const totalDeposit=depositNumber+currentDepositNumber;
 
             document.getElementById('currentDeposit').innerText=totalDeposit;
-            document.getElementById('depositAmount').Value='';
+            document.getElementById('depositAmount').value='';
 
         })
 
